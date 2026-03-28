@@ -1,0 +1,44 @@
+# Wildlife Biodiversity Analysis using Camera Trap Data
+
+## Overview
+This project investigates wildlife biodiversity patterns in Southeast Asian tropical forests using camera-trap data from the CamTrapAsia initiative.  
+The analysis covers data cleaning, exploratory analysis, statistical testing, temporal trends, clustering, and hierarchical taxonomy modeling.
+
+## Dataset
+- **Source:** [CamTrapAsia Biodiversity Dataset](https://zenodo.org/records/10780971)  
+- **Format:** CSV  
+- **Key fields:** `survey_id`, `records`, `country`, `year_start`, `taxonomic information`, `domestic/wild`, `latitude/longitude`
+
+## Project Workflow
+1. **Data Loading & Cleaning** — Import dataset, handle missing values, and convert data types.  
+2. **Exploratory Data Analysis (EDA)** — Examine wild species distribution across countries.  
+3. **Statistical Testing** — Chi-square test for animal orders; Kruskal-Wallis test for Shannon Diversity Index.  
+4. **Visualization** — Bar charts, scatter plots, temporal trends, and population smoothing.  
+5. **Clustering Analysis** — K-Means clustering of predator and primate abundance patterns.  
+6. **Temporal Trends** — Smoothed population trends for *Macaca nemestrina*.  
+7. **OOP Taxonomy Modeling** — Represent biological hierarchy: Order → Family → Genus → Species.  
+8. **Polymorphism & Recursion** — Aggregate detection counts across hierarchical nodes.  
+9. **Recursive Tree Visualization** — Display taxonomy in a clear tree format.
+
+## Tools & Libraries
+- Python 3.x  
+- pandas, numpy  
+- matplotlib, seaborn  
+- scipy.stats, sklearn.cluster  
+
+## Key Findings
+- Taxonomic order distributions vary significantly between countries.  
+- Survey coverage has expanded over time; early studies were geographically clustered.  
+- Predator and primate abundances form four distinct spatial clusters.  
+- Shannon Diversity Index shows no significant difference among Malaysia, Indonesia, and Thailand.  
+- OOP and recursive methods provide an efficient way to model and visualize taxonomic hierarchy.
+
+## Conclusion
+This analysis highlights structured biodiversity patterns, temporal dynamics, and spatial heterogeneity in tropical forest vertebrates.  
+The workflow and modeling approaches provide a foundation for further ecological studies and can be adapted to other species or regions.
+
+## How to Run
+1. Clone the repository.  
+2. Install required packages:  
+   ```bash
+   pip install pandas numpy matplotlib seaborn scipy scikit-learn
